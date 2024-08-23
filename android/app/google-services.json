@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628091154885",
+    "project_id": "master-ecqtpw",
+    "storage_bucket": "master-ecqtpw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628091154885:android:1b54c5b49aaa743bb4dbac",
+        "android_client_info": {
+          "package_name": "com.mymovieapp.zktrade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCST8DCqgXqX_DwnZ6aR91FNH3-UYlWkE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
