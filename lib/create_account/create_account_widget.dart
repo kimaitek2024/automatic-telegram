@@ -6,6 +6,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'create_account_model.dart';
 export 'create_account_model.dart';
 
@@ -157,8 +158,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .headlineLarge
                                                 .override(
-                                                  fontFamily: 'Outfit',
+                                                  fontFamily:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .headlineLargeFamily,
                                                   letterSpacing: 0.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(FlutterFlowTheme
+                                                              .of(context)
+                                                          .headlineLargeFamily),
                                                 ),
                                           ),
                                         ),
@@ -179,21 +188,39 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMediumFamily),
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMediumFamily,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMediumFamily),
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -241,8 +268,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily,
                                                   letterSpacing: 0.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMediumFamily),
                                                 ),
                                             keyboardType:
                                                 TextInputType.emailAddress,
@@ -268,21 +303,39 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMediumFamily),
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMediumFamily,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMediumFamily),
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -330,8 +383,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily,
                                                   letterSpacing: 0.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMediumFamily),
                                                 ),
                                             validator: _model
                                                 .textController2Validator
@@ -354,21 +415,39 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMediumFamily,
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .primaryText,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMediumFamily),
                                                       ),
                                               hintStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelMediumFamily,
                                                         fontSize: 16.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelMediumFamily),
                                                       ),
                                               enabledBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -416,8 +495,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily,
                                                   letterSpacing: 0.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMediumFamily),
                                                 ),
                                             validator: _model
                                                 .textController3Validator
@@ -447,8 +534,17 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily: 'Outfit',
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLargeFamily,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLargeFamily),
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -528,8 +624,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                       .bodyLarge
                                                       .override(
                                                         fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLargeFamily,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLargeFamily),
                                                       ),
                                               validator: _model
                                                   .passwordTextControllerValidator
@@ -560,8 +664,17 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily: 'Outfit',
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLargeFamily,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLargeFamily),
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -641,8 +754,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                       .bodyLarge
                                                       .override(
                                                         fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLargeFamily,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyLargeFamily),
                                                       ),
                                               minLines: 1,
                                               validator: _model
@@ -705,7 +826,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                         .textController3.text,
                                                   ));
 
-                                              context.goNamedAuth(
+                                              context.pushNamedAuth(
                                                   'Homepage', context.mounted);
                                             },
                                             text: 'Create Account',
@@ -724,9 +845,17 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                       .titleSmall
                                                       .override(
                                                         fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmallFamily,
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmallFamily),
                                                       ),
                                               elevation: 3.0,
                                               borderSide: const BorderSide(
@@ -748,7 +877,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             hoverColor: Colors.transparent,
                                             highlightColor: Colors.transparent,
                                             onTap: () async {
-                                              context.pushNamed('AccoubLogin');
+                                              context.pushNamed('AccoutLogin');
                                             },
                                             child: SizedBox(
                                               width: double.infinity,
@@ -802,10 +931,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                                     context)
                                                                 .labelLarge
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLargeFamily,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .labelLargeFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -845,7 +980,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                         Colors.transparent,
                                                     onTap: () async {
                                                       context.pushNamed(
-                                                          'AccoubLogin');
+                                                          'ResetPassword');
                                                     },
                                                     child: RichText(
                                                       textScaler:
@@ -864,10 +999,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                                     context)
                                                                 .bodyMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Plus Jakarta Sans',
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -893,7 +1034,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 return;
                                               }
 
-                                              context.goNamedAuth(
+                                              context.pushNamedAuth(
                                                   'Homepage', context.mounted);
                                             },
                                             child: Column(
@@ -919,8 +1060,19 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                       highlightColor:
                                                           Colors.transparent,
                                                       onTap: () async {
-                                                        context.pushNamed(
-                                                            'AccoubLogin');
+                                                        GoRouter.of(context)
+                                                            .prepareAuthEvent();
+                                                        final user =
+                                                            await authManager
+                                                                .signInAnonymously(
+                                                                    context);
+                                                        if (user == null) {
+                                                          return;
+                                                        }
+
+                                                        context.pushNamedAuth(
+                                                            'Homepage',
+                                                            context.mounted);
                                                       },
                                                       child: RichText(
                                                         textScaler:
@@ -940,14 +1092,20 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                                   .of(context)
                                                               .bodyMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Plus Jakarta Sans',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMediumFamily,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryText,
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .bodyMediumFamily),
                                                               ),
                                                         ),
                                                       ),

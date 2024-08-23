@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'accoub_login_widget.dart' show AccoubLoginWidget;
+import 'accout_login_widget.dart' show AccoutLoginWidget;
 import 'package:flutter/material.dart';
 
-class AccoubLoginModel extends FlutterFlowModel<AccoubLoginWidget> {
+class AccoutLoginModel extends FlutterFlowModel<AccoutLoginWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for emailAddress widget.

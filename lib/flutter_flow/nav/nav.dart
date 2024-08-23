@@ -96,14 +96,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'HomepageNotLogged',
-          path: '/homepageNotLogged',
-          builder: (context, params) => const HomepageNotLoggedWidget(),
-        ),
-        FFRoute(
-          name: 'AccoubLogin',
-          path: '/accoubLogin',
-          builder: (context, params) => AccoubLoginWidget(
+          name: 'AccoutLogin',
+          path: '/accoutLogin',
+          builder: (context, params) => AccoutLoginWidget(
             codes: params.getParam(
               'codes',
               ParamType.bool,
@@ -303,13 +298,15 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Container(
-                  color: Colors.transparent,
-                  child: Image.asset(
-                    'assets/images/Untitled_design.gif',
-                    fit: BoxFit.cover,
-                  ),
-                )
+              ? isWeb
+                  ? Container()
+                  : Container(
+                      color: Colors.transparent,
+                      child: Image.asset(
+                        'assets/images/Untitled_design.gif',
+                        fit: BoxFit.cover,
+                      ),
+                    )
               : page;
 
           final transitionInfo = state.transitionInfo;

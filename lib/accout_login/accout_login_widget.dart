@@ -4,11 +4,12 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'accoub_login_model.dart';
-export 'accoub_login_model.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'accout_login_model.dart';
+export 'accout_login_model.dart';
 
-class AccoubLoginWidget extends StatefulWidget {
-  const AccoubLoginWidget({
+class AccoutLoginWidget extends StatefulWidget {
+  const AccoutLoginWidget({
     super.key,
     bool? codes,
   }) : codes = codes ?? true;
@@ -16,18 +17,18 @@ class AccoubLoginWidget extends StatefulWidget {
   final bool codes;
 
   @override
-  State<AccoubLoginWidget> createState() => _AccoubLoginWidgetState();
+  State<AccoutLoginWidget> createState() => _AccoutLoginWidgetState();
 }
 
-class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
-  late AccoubLoginModel _model;
+class _AccoutLoginWidgetState extends State<AccoutLoginWidget> {
+  late AccoutLoginModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => AccoubLoginModel());
+    _model = createModel(context, () => AccoutLoginModel());
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
@@ -131,8 +132,14 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .headlineLarge
                                         .override(
-                                          fontFamily: 'Outfit',
+                                          fontFamily:
+                                              FlutterFlowTheme.of(context)
+                                                  .headlineLargeFamily,
                                           letterSpacing: 0.0,
+                                          useGoogleFonts: GoogleFonts.asMap()
+                                              .containsKey(
+                                                  FlutterFlowTheme.of(context)
+                                                      .headlineLargeFamily),
                                         ),
                                   ),
                                   Padding(
@@ -143,8 +150,14 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Outfit',
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelMediumFamily,
                                             letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMediumFamily),
                                           ),
                                     ),
                                   ),
@@ -162,19 +175,35 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Outfit',
+                                              fontFamily:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMediumFamily,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .primaryText,
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMediumFamily),
                                             ),
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Outfit',
+                                              fontFamily:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMediumFamily,
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMediumFamily),
                                             ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -216,8 +245,14 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMediumFamily,
                                             letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily),
                                           ),
                                       keyboardType: TextInputType.emailAddress,
                                       validator: _model
@@ -241,13 +276,21 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                             !_model.passwordConfirmVisibility,
                                         decoration: InputDecoration(
                                           labelText: 'Confirm Password',
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelLarge
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLargeFamily,
+                                                letterSpacing: 0.0,
+                                                useGoogleFonts: GoogleFonts
+                                                        .asMap()
+                                                    .containsKey(
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .labelLargeFamily),
+                                              ),
                                           enabledBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
                                               color:
@@ -317,8 +360,16 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              fontFamily:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyLargeFamily,
                                               letterSpacing: 0.0,
+                                              useGoogleFonts:
+                                                  GoogleFonts.asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLargeFamily),
                                             ),
                                         minLines: 1,
                                         validator: _model
@@ -346,7 +397,7 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                           return;
                                         }
 
-                                        context.goNamedAuth(
+                                        context.pushNamedAuth(
                                             'Homepage', context.mounted);
                                       },
                                       text: 'Login Account',
@@ -363,9 +414,17 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              fontFamily:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmallFamily,
                                               color: Colors.white,
                                               letterSpacing: 0.0,
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmallFamily),
                                             ),
                                         elevation: 3.0,
                                         borderSide: const BorderSide(
@@ -423,8 +482,17 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
                                                         .override(
-                                                          fontFamily: 'Outfit',
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelLargeFamily,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelLargeFamily),
                                                         ),
                                               ),
                                             ),
@@ -446,7 +514,7 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                         hoverColor: Colors.transparent,
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
-                                          context.pushNamed('AccoubLogin');
+                                          context.pushNamed('CreateAccount');
                                         },
                                         child: RichText(
                                           textScaler:
@@ -465,13 +533,21 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMediumFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .primary,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.w600,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily),
                                                         ),
                                               )
                                             ],
@@ -479,8 +555,16 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMediumFamily,
                                                   letterSpacing: 0.0,
+                                                  useGoogleFonts: GoogleFonts
+                                                          .asMap()
+                                                      .containsKey(
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMediumFamily),
                                                 ),
                                           ),
                                         ),
