@@ -347,7 +347,7 @@ class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
                                         }
 
                                         context.goNamedAuth(
-                                            'CreateAccount', context.mounted);
+                                            'Homepage', context.mounted);
                                       },
                                       text: 'Login Account',
                                       options: FFButtonOptions(

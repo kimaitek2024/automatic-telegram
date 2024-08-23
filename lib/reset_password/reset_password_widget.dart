@@ -102,7 +102,7 @@ class _ResetPasswordWidgetState extends State<ResetPasswordWidget> {
                                           ? 'assets/images/tmdb-logo.png'
                                           : 'assets/images/tmdb-logo.png',
                                       width: 300.0,
-                                      height: 87.0,
+                                      height: 70.0,
                                       fit: BoxFit.contain,
                                     ),
                                   ),

@@ -26,5 +26,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:628091154885:ios:45e252a03bcb3240b4dbac</string>
+	<key>DATABASE_URL</key>
+	<string>https://master-ecqtpw-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

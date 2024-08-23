@@ -71,14 +71,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const CreateAccountWidget() : const HomepageWidget(),
+          appStateNotifier.loggedIn ? const HomepageWidget() : const CreateAccountWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? const CreateAccountWidget()
-              : const HomepageWidget(),
+              ? const HomepageWidget()
+              : const CreateAccountWidget(),
         ),
         FFRoute(
           name: 'Homepage',
@@ -289,7 +289,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/homepage';
+            return '/createAccount';
           }
           return null;
         },

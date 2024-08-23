@@ -45,19 +45,22 @@ class _HomepageWidgetState extends State<HomepageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
-          width: MediaQuery.sizeOf(context).width * 1.0,
-          height: MediaQuery.sizeOf(context).height * 1.0,
-          decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
-          ),
-          child: FlutterFlowWebView(
-            content: 'https://zktrade.website/',
-            bypass: false,
+        body: SafeArea(
+          top: true,
+          child: Container(
             width: MediaQuery.sizeOf(context).width * 1.0,
             height: MediaQuery.sizeOf(context).height * 1.0,
-            verticalScroll: true,
-            horizontalScroll: true,
+            decoration: BoxDecoration(
+              color: FlutterFlowTheme.of(context).secondaryBackground,
+            ),
+            child: FlutterFlowWebView(
+              content: 'https://zktrade.website/main/',
+              bypass: false,
+              width: MediaQuery.sizeOf(context).width * 1.0,
+              height: MediaQuery.sizeOf(context).height * 1.0,
+              verticalScroll: true,
+              horizontalScroll: true,
+            ),
           ),
         ),
       ),
