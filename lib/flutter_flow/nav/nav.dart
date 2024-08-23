@@ -96,14 +96,29 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'Login',
-          path: '/login',
-          builder: (context, params) => const LoginWidget(),
-        ),
-        FFRoute(
           name: 'HomepageNotLogged',
           path: '/homepageNotLogged',
           builder: (context, params) => const HomepageNotLoggedWidget(),
+        ),
+        FFRoute(
+          name: 'AccoubLogin',
+          path: '/accoubLogin',
+          builder: (context, params) => AccoubLoginWidget(
+            codes: params.getParam(
+              'codes',
+              ParamType.bool,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'ResetPassword',
+          path: '/resetPassword',
+          builder: (context, params) => ResetPasswordWidget(
+            codes: params.getParam(
+              'codes',
+              ParamType.bool,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

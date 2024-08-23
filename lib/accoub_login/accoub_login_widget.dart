@@ -1,16 +1,14 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'create_account_model.dart';
-export 'create_account_model.dart';
+import 'accoub_login_model.dart';
+export 'accoub_login_model.dart';
 
-class CreateAccountWidget extends StatefulWidget {
-  const CreateAccountWidget({
+class AccoubLoginWidget extends StatefulWidget {
+  const AccoubLoginWidget({
     super.key,
     bool? codes,
   }) : codes = codes ?? true;
@@ -18,18 +16,18 @@ class CreateAccountWidget extends StatefulWidget {
   final bool codes;
 
   @override
-  State<CreateAccountWidget> createState() => _CreateAccountWidgetState();
+  State<AccoubLoginWidget> createState() => _AccoubLoginWidgetState();
 }
 
-class _CreateAccountWidgetState extends State<CreateAccountWidget> {
-  late CreateAccountModel _model;
+class _AccoubLoginWidgetState extends State<AccoubLoginWidget> {
+  late AccoubLoginModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CreateAccountModel());
+    _model = createModel(context, () => AccoubLoginModel());
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
@@ -38,15 +36,6 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
 
     _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
-
-    _model.textController2 ??= TextEditingController();
-    _model.textFieldFocusNode1 ??= FocusNode();
-
-    _model.textController3 ??= TextEditingController();
-    _model.textFieldFocusNode2 ??= FocusNode();
-
-    _model.passwordTextController ??= TextEditingController();
-    _model.passwordFocusNode ??= FocusNode();
 
     _model.passwordConfirmTextController ??= TextEditingController();
     _model.passwordConfirmFocusNode ??= FocusNode();
@@ -112,8 +101,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                           Brightness.dark
                                       ? 'assets/images/tmdb-logo.png'
                                       : 'assets/images/tmdb-logo.png',
-                                  width: 300.0,
-                                  height: 87.0,
+                                  width: 260.0,
+                                  height: 85.0,
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -137,13 +126,22 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                  Text(
+                                    'Login my account',
+                                    style: FlutterFlowTheme.of(context)
+                                        .headlineLarge
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          letterSpacing: 0.0,
+                                        ),
+                                  ),
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 10.0),
+                                        0.0, 12.0, 0.0, 24.0),
                                     child: Text(
-                                      'Create an account',
+                                      'Let\'s get started by filling out the form below.',
                                       style: FlutterFlowTheme.of(context)
-                                          .headlineLarge
+                                          .labelMedium
                                           .override(
                                             fontFamily: 'Outfit',
                                             letterSpacing: 0.0,
@@ -225,251 +223,6 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                       validator: _model
                                           .emailAddressTextControllerValidator
                                           .asValidator(context),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 16.0),
-                                    child: TextFormField(
-                                      controller: _model.textController2,
-                                      focusNode: _model.textFieldFocusNode1,
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText: 'Sponsor ID (optional)',
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Outfit',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                              fontSize: 16.0,
-                                              letterSpacing: 0.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Outfit',
-                                              fontSize: 16.0,
-                                              letterSpacing: 0.0,
-                                            ),
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryBackground,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Plus Jakarta Sans',
-                                            letterSpacing: 0.0,
-                                          ),
-                                      validator: _model.textController2Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 16.0),
-                                    child: TextFormField(
-                                      controller: _model.textController3,
-                                      focusNode: _model.textFieldFocusNode2,
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText: 'Activation Code',
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Outfit',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                              fontSize: 16.0,
-                                              letterSpacing: 0.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Outfit',
-                                              fontSize: 16.0,
-                                              letterSpacing: 0.0,
-                                            ),
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryBackground,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(8.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Plus Jakarta Sans',
-                                            letterSpacing: 0.0,
-                                          ),
-                                      validator: _model.textController3Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 16.0),
-                                    child: SizedBox(
-                                      width: double.infinity,
-                                      child: TextFormField(
-                                        controller:
-                                            _model.passwordTextController,
-                                        focusNode: _model.passwordFocusNode,
-                                        autofocus: true,
-                                        autofillHints: const [AutofillHints.password],
-                                        obscureText: !_model.passwordVisibility,
-                                        decoration: InputDecoration(
-                                          labelText: 'Password',
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
-                                              width: 2.0,
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
-                                          focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
-                                              width: 2.0,
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
-                                          errorBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .error,
-                                              width: 2.0,
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
-                                          focusedErrorBorder:
-                                              OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .error,
-                                              width: 2.0,
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
-                                          filled: true,
-                                          fillColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .primaryBackground,
-                                          suffixIcon: InkWell(
-                                            onTap: () => setState(
-                                              () => _model.passwordVisibility =
-                                                  !_model.passwordVisibility,
-                                            ),
-                                            focusNode:
-                                                FocusNode(skipTraversal: true),
-                                            child: Icon(
-                                              _model.passwordVisibility
-                                                  ? Icons.visibility_outlined
-                                                  : Icons
-                                                      .visibility_off_outlined,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              size: 24.0,
-                                            ),
-                                          ),
-                                        ),
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyLarge
-                                            .override(
-                                              fontFamily: 'Plus Jakarta Sans',
-                                              letterSpacing: 0.0,
-                                            ),
-                                        validator: _model
-                                            .passwordTextControllerValidator
-                                            .asValidator(context),
-                                      ),
                                     ),
                                   ),
                                   Padding(
@@ -580,54 +333,26 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         GoRouter.of(context).prepareAuthEvent();
-                                        if (_model
-                                                .passwordTextController.text !=
-                                            _model.passwordConfirmTextController
-                                                .text) {
-                                          ScaffoldMessenger.of(context)
-                                              .showSnackBar(
-                                            const SnackBar(
-                                              content: Text(
-                                                'Passwords don\'t match!',
-                                              ),
-                                            ),
-                                          );
-                                          return;
-                                        }
 
-                                        final user = await authManager
-                                            .createAccountWithEmail(
+                                        final user =
+                                            await authManager.signInWithEmail(
                                           context,
                                           _model
                                               .emailAddressTextController.text,
-                                          _model.passwordTextController.text,
+                                          _model.passwordConfirmTextController
+                                              .text,
                                         );
                                         if (user == null) {
                                           return;
                                         }
 
-                                        await UsersRecord.collection
-                                            .doc(user.uid)
-                                            .update(createUsersRecordData(
-                                              sponsorID: valueOrDefault<String>(
-                                                _model.textController2.text,
-                                                'ZKTRADE',
-                                              ),
-                                              mySponsoringID: random_data
-                                                  .randomInteger(
-                                                      10000000, 99999999)
-                                                  .toString(),
-                                              activationCode:
-                                                  _model.textController3.text,
-                                            ));
-
                                         context.goNamedAuth(
                                             'CreateAccount', context.mounted);
                                       },
-                                      text: 'Create Account',
+                                      text: 'Login Account',
                                       options: FFButtonOptions(
                                         width: double.infinity,
-                                        height: 56.0,
+                                        height: 61.0,
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
@@ -693,7 +418,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
-                                                'SIGN IN',
+                                                'OR',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge
@@ -727,10 +452,27 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                           textScaler:
                                               MediaQuery.of(context).textScaler,
                                           text: TextSpan(
-                                            children: const [
-                                              TextSpan(
-                                                text: 'Reset Password',
+                                            children: [
+                                              const TextSpan(
+                                                text:
+                                                    'Already have an account? ',
                                                 style: TextStyle(),
+                                              ),
+                                              TextSpan(
+                                                text: ' Sign Up here',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily:
+                                                              'Plus Jakarta Sans',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primary,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                        ),
                                               )
                                             ],
                                             style: FlutterFlowTheme.of(context)
